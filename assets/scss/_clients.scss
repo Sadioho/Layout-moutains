@@ -1,0 +1,56 @@
+@import '@media';
+@import 'mixin';
+@import 'variable';
+.clients{ 
+
+    margin-bottom: 150px;
+    .container{
+        .row{
+           .client-one{
+            .clients-icon{
+                h1{
+                    padding: 0;
+                    margin: 0;
+                    font-family: 'kitu';
+                    font-size: 60px;
+                    color: $color-text-2;
+                }
+            }
+            .clients-text{
+                color: rgb(129, 129, 129);
+                font-weight: 300;
+                font-size: 18px;
+                @include Responsive(XL){
+                    color: $color-text;
+                }
+            }
+            .clients-user{
+                .user-logo{
+                    margin: 20px 0;
+                    span{
+                        display: inline-block;
+                        img{
+                            border-radius: 50%;
+                            margin-right: 20px;
+                        }
+                        p{
+                            font-size: 16px;
+                            color: $color-blue;
+                            font-weight: bold;
+                            span{
+                            font-weight: lighter;
+                                   
+                            }
+                        }
+                    }
+                   
+                    
+                }
+            }
+           }
+           .client-two{
+               @extend .client-one;
+           }
+        }
+    }
+}

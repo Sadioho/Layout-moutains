@@ -1,0 +1,18 @@
+@import "@media";
+@import "fonts";
+@import 'footer';
+@import 'gallery';
+@import 'header';
+@import 'logos';
+@import 'mixin';
+@import 'variable';
+@import 'offer';
+@import 'blog';
+@import 'journal';
+@import 'clients';
+* {
+    font-family: 'myriad-semibold';
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+

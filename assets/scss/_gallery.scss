@@ -1,0 +1,133 @@
+@import '@media';
+@import 'mixin';
+@import 'variable';
+
+.gallery {
+
+    .container {
+        .row {
+            .gallery-text {
+                text-align: center;
+                margin: 70px 0;
+                h2{
+                    font-weight: 600;
+                }
+
+            }
+
+            .gallery-photo {
+                margin: auto;
+                img {
+                    width: 100%;
+                   
+                    margin: 15px 0;
+                    height: max-content;
+
+                   
+                }
+                .show-1 {
+                    .photo-1{
+                        img{
+                            height: 100%;
+                           @include Responsive(XS){
+                           
+                           }
+                        }
+                    }
+                    .photo-2 {
+                        // @extend .photo-1;
+                        img{
+                            height: 100%;
+                           
+                            @include Responsive(SM){
+                                height: 300px;
+                               }
+                               @include Responsive(XL){
+                                height: 290px;
+    
+                            }
+                         
+                        }
+                       
+                    }
+                }
+                .show-2{
+                  .photo-3{
+                     img{
+                        height: 100%;
+                     } 
+                  }
+                  .photo-4{
+                    img{
+                        height: 100%;
+                        @include Responsive(SM){
+                            height: 490px;
+
+                        }
+                        @include Responsive(MD){
+                            height: 555px;
+
+                        }
+                        @include Responsive(XL){
+                            height: 100%;
+
+                        }
+                     } 
+                }
+                  
+                }
+                .show-3 {
+                    margin: auto;
+                    .row{
+                        padding: 0;
+                       
+                        
+                    }
+                    .photo-5 {
+                         padding: 0; 
+                      
+                    img{
+                           height: 100%;
+
+                        @include Responsive(SM){
+                        height: 281px;
+
+                        }
+                        @include Responsive(XL){
+                            height: 100%;
+
+                        }
+                        
+                    }
+                    @include Responsive(SM){
+                        padding-right: 15px;
+                    }
+                    @include Responsive(XL){
+                        padding: 0px;
+                    }
+                    }
+
+                    .photo-6 {padding: 0; 
+                       
+                        img{
+                          height: 100%;
+                            @include Responsive(SM){
+                                height: 281px;
+                            }
+                            @include Responsive(XL){
+                                height: 290px;
+    
+                            }
+                        }
+                        @include Responsive(SM){
+                            padding-left: 15px;
+                        }
+                        @include Responsive(XL){
+                            padding: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

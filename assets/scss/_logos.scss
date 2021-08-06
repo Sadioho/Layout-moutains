@@ -1,0 +1,22 @@
+@import '@media';
+@import 'mixin';
+@import 'variable';
+
+
+.logos{
+    margin: 50px 0px;
+    background-color: $bg-logos;
+    .container{
+        .row{
+           padding: 40px 0;
+           text-align: center;
+            img{
+                margin: 20px 0;
+                top: 50%;
+                left: 50%;
+          
+
+            }
+        }
+    }
+}
